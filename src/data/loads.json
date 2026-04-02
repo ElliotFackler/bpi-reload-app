@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "Gauge": "12ga",
+    "Load Weight": "1 1/8 oz",
+    "Powder": "Longshore",
+    "Primer": "Win 209",
+    "Wad": "WAA12",
+    "Velocity": "1200 FPS"
+  },
+  {
+    "id": "2",
+    "Gauge": "12ga",
+    "Load Weight": "1 1/4 oz",
+    "Powder": "Blue Dot",
+    "Primer": "Fed 209A",
+    "Wad": "Rem Figure 8",
+    "Velocity": "1330 FPS"
+  },
+  {
+    "id": "3",
+    "Gauge": "20ga",
+    "Load Weight": "7/8 oz",
+    "Powder": "Unique",
+    "Primer": "CCI 209",
+    "Wad": "WAA20",
+    "Velocity": "1200 FPS"
+  },
+  {
+    "id": "4",
+    "Gauge": "28ga",
+    "Load Weight": "3/4 oz",
+    "Powder": "HS-6",
+    "Primer": "Win 209",
+    "Wad": "WAA28",
+    "Velocity": "1200 FPS"
+  },
+  {
+    "id": "5",
+    "Gauge": "410 bore",
+    "Load Weight": "1/2 oz",
+    "Powder": "H110",
+    "Primer": "Win 209",
+    "Wad": "WAA41",
+    "Velocity": "1200 FPS"
+  }
+]
