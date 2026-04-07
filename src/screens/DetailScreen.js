@@ -6,11 +6,14 @@ export default function DetailScreen({ route }) {
 
   const dataRows = [
     { label: 'Gauge', value: load.Gauge },
+    { label: 'Hull Length', value: load['Hull Length'] },
     { label: 'Load Weight', value: load['Load Weight'] },
+    { label: 'Shot Material', value: load['Shot Material'] },
     { label: 'Powder', value: load.Powder },
     { label: 'Primer', value: load.Primer },
     { label: 'Wad', value: load.Wad },
     { label: 'Velocity', value: load.Velocity },
+    { label: 'Pressure', value: load.Pressure },
   ];
 
   return (
