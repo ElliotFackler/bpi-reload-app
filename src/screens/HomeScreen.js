@@ -16,8 +16,8 @@ export default function HomeScreen({ navigation }) {
 
   const filteredLoads = loadsData.filter((item) => {
     const query = searchQuery.toLowerCase();
-    const matchesSearch = 
-      item.Gauge.toLowerCase().includes(query) || 
+    const matchesSearch =
+      item.Gauge.toLowerCase().includes(query) ||
       item.Powder.toLowerCase().includes(query) ||
       item.Primer.toLowerCase().includes(query) ||
       item.Wad.toLowerCase().includes(query) ||
@@ -25,7 +25,7 @@ export default function HomeScreen({ navigation }) {
     const matchesGauge = gaugeFilter ? item.Gauge === gaugeFilter : true;
     const matchesMaterial = materialFilter ? item['Shot Material'] === materialFilter : true;
     const matchesHull = hullFilter ? item['Hull Length'] === hullFilter : true;
-    
+
     return matchesSearch && matchesGauge && matchesMaterial && matchesHull;
   });
 
@@ -74,9 +74,9 @@ export default function HomeScreen({ navigation }) {
           const { label, selected } = filterOptions[key];
           const isActive = selected !== '';
           return (
-            <TouchableOpacity 
-              key={key} 
-              style={[styles.dropdownButton, isActive && styles.dropdownButtonActive]} 
+            <TouchableOpacity
+              key={key}
+              style={[styles.dropdownButton, isActive && styles.dropdownButtonActive]}
               onPress={() => setActiveDropdown(key)}
             >
               <Text style={[styles.dropdownButtonText, isActive && styles.dropdownButtonTextActive]}>
@@ -100,8 +100,8 @@ export default function HomeScreen({ navigation }) {
               </View>
               <ScrollView>
                 {filterOptions[activeDropdown].options.map(option => (
-                  <TouchableOpacity 
-                    key={option} 
+                  <TouchableOpacity
+                    key={option}
                     style={styles.modalOption}
                     onPress={() => {
                       filterOptions[activeDropdown].setSelect(option);
@@ -157,7 +157,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   filterBar: {
-    maxHeight: 50,
     marginBottom: 8,
   },
   filterBarContent: {
